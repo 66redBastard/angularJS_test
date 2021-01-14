@@ -16,11 +16,11 @@ angular.module("angularjsYoApp", ["ngRoute"]).config(function ($routeProvider) {
       controllerAs: "main",
     })
     .when("/about", {
-      templateUrl: "/views/about.html",
+      templateUrl: "../views/about.html",
       controller: "AboutCtrl",
       controllerAs: "about",
     })
     .otherwise({
-      redirectTo: "/",
+      redirectTo: "../404.html",
     });
 });
